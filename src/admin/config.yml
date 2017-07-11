@@ -14,5 +14,4 @@ collections: # A list of collections the CMS should be able to edit # update
         name: "home"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Body, name: content, widget: markdown}
-          - {label: BodyA, name: body, widget: markdown}
+          - {label: Body, name: body, widget: markdown}
