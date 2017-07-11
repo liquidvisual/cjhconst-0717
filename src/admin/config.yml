@@ -5,7 +5,7 @@ backend:
 
 media_folder: "src/assets/img/content" # Folder where user uploaded files should go
 
-collections: # A list of collections the CMS should be able to edit
+collections: # A list of collections the CMS should be able to edit # update
   - name: "pages"
     label: "Pages"
     files:
