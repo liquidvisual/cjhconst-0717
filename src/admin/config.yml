@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: <% GITHUB_REPOSITORY %> # Gulp will replace this with your GitHub repository
+  repo: liquidvisual/cjhconst-0717 # Gulp will replace this with your GitHub repository
   branch: master # Branch to update (master by default)
 
 media_folder: "src/assets/img/content" # Folder where user uploaded files should go
