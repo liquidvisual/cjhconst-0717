@@ -1,0 +1,75 @@
+---
+layout: base
+---
+
+{% assign settings = site.data.settings %}
+
+{% include hero.html %}
+
+<!-- ABOUT US -->
+<section id="about-us" class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<h2>Our Story</h2>
+				<p class="lead">CJH Constructions PTY LTD is a family owned and operated business. We put the needs of our clients first.</p>
+				<p>We believe in thorough client consultation to ensure we understand your vision.</p><p>We work within any budget and take on projects both big and small.</p><p>It is important to us that our clients feel happy and comfortable at every stage of construction.</p>
+				<p>We provide free no obligation quotes at your request.</p>
+			</div>
+			<div class="spacer mb-4 hidden-md-up"></div>
+			<div class="col-md-4 offset-md-1">
+				<h3><i class="fa fa-clock-o"></i> Trading Hours</h3>
+				<p class="lead">
+					<strong>MON - FRI:</strong> 7:30am - 5pm<br>
+					<strong>SAT:</strong> 9am - 4pm<br>
+					<strong>SUN:</strong> 10am - 4pm<br>
+				</p>
+				<br>
+				{% include snippets/social_media.html %}
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section has-image-bg inverse" style="background-image: url(/assets/img/content/hero/hero-2.jpg)">
+	<div class="container">
+		<h2 class="mb-5 text-center">Our Services</h2>
+		<ul class="block-grid-xs-2 block-grid-md-2 text-center">
+			<li><h3>Renovations</h3></li>
+	​		<li><h3>Flooring</h3></li>
+			<li><h3>Decks</h3></li>
+			<li><h3>Pergolas</h3></li>
+			<li><h3>Roofing</h3></li>
+			<li><h3>Car Ports</h3></li>
+			<li><h3>Fitouts</h3></li>
+			<li><h3>Custom Work</h3></li>
+			<li><h3>New Homes</h3></li>
+			<li><h3>All Aspects of Carpentry</h3></li>
+		</ul>
+	</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+	<div class="container">
+		<h2 class="text-center mb-5">Recent Projects</h2>
+		<ul class="block-grid-md-2 block-grid-lg-3">
+			{% for i in (1..6) %}
+				<li><img width="100%" src="/assets/img/content/gallery-{{i}}.jpg" alt="Gallery"></li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section has-image-bg inverse has-fixed-bg" style="background-image: url(/assets/img/content/hero/hero-1.jpg)">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-8 col-lg-6 col-xl-5">
+				<h2 class="text-center mb-5">Contact Us for a Quick Quote!</h2>
+				{% include snippets/form_basic.html %}
+			</div>
+		</div>
+	</div>
+</section>

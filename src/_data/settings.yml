@@ -1,0 +1,42 @@
+# GLOBAL SITE SETTINGS
+
+cname: cjhconstructions.com.au
+
+# META
+title: CJH Constructions
+title_homepage: CJH Constructions - Local Construction for Cambelltown, Narellan, Camden and Western Sydney
+company: CJH Constructions Pty Ltd
+description: CJH Constructions is small team of professionals that work through Cambelltown, Narellan, Camden and Western Sydney. Get a quick quote today.
+
+# SITE DEFAULTS
+site_tagline:
+
+# DEVELOPER
+allow_robots: true
+github_repo_owner: liquidvisual
+github_repo_path: https://github.com/liquidvisual/cjhconst-0717
+github_repo_name:
+jekyll_version: 3.5.0
+
+# OFFICES
+offices:
+  - title: Campbelltown
+    address:
+    phone: 04 4966 3606
+    email: kelly@cjhconstructions.com.au
+
+# SOCIAL MEDIA
+facebook: https://www.facebook.com/cjhconstructionsptyltd/
+linked_in:
+google_plus:
+instagram: https://www.instagram.com/cjhconstructions/
+
+# GOOGLE
+google_analytics: "UA-XXXXXXXX-X"
+
+# AUTHOR
+author:
+  title: liquidvisual
+  url: http://muchmedia.com.au
+  logo: /assets/img/ui/logo-liquidviual.svg
+  description: website by liquidvisual
