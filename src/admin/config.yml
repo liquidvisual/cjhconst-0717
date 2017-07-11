@@ -14,3 +14,13 @@ collections: # A list of collections the CMS should be able to edit
         name: "home"
         fields:
           - {label: Title, name: title, widget: string}
+      - file: "src/_pages/404.md"
+        label: "404a"
+        name: "404a"
+        fields:
+          - {label: Title, name: title, widget: string}
+      - file: "src/pages/home.md"
+        label: "404b"
+        name: "404b"
+        fields:
+          - {label: Title, name: title, widget: string}
