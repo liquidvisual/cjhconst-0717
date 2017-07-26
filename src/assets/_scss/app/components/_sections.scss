@@ -102,6 +102,51 @@
 }
 
 //-----------------------------------------------------------------
+// EVENT DETAILS + ACCOMMODATION [SPLIT]
+//-----------------------------------------------------------------
+
+.section-areas-we-service {
+
+	> .container {
+		@include media-breakpoint-up(sm) {
+		    max-width: none;
+		    width: auto;
+		    padding: 0;
+		}
+	}
+
+	.col-md-6XXXX {
+		padding: $spacer*4 $spacer;
+
+		@include media-breakpoint-down(sm) {
+		    padding: $spacer*4 $spacer*2;
+		}
+
+		@include media-breakpoint-down(xs) {
+		    padding: $spacer*4 $spacer;
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// 01. EVENT DETAILS [SPLIT]
+//-----------------------------------------------------------------
+
+.section-areas-we-service {
+
+	.col-md-6:first-of-type {
+		background: #2f5996;
+		color: white;
+	}
+
+	.col-md-6:last-of-type {
+		@include media-breakpoint-down(sm) {
+		    height: rem-calc(400);
+		}
+	}
+}
+
+//-----------------------------------------------------------------
 //
 //-----------------------------------------------------------------
 //=========================================

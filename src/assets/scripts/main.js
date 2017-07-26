@@ -10,7 +10,50 @@
 
 $(window).on('load', function() {
     $('html').addClass('has-loaded');
+    lightbox();
+    createGoogleMap();
 });
+
+//-----------------------------------------------------------------
+// GOOGLE MAP
+//-----------------------------------------------------------------
+
+function createGoogleMap() {
+    if ($('iframe').length == 1) {
+        $('iframe').each(function(){
+            var $this = $(this);
+            var dataSrc = $(this).attr('data-src');
+            $this.attr('src', dataSrc);
+            console.log(dataSrc);
+        });
+    }
+}
+
+//-----------------------------------------------------------------
+// POPUP GALLERY
+//-----------------------------------------------------------------
+
+function lightbox() {
+    $('.popup-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function(item) {
+                return item.el.attr('title') + '<small><a href="https://www.jasondeplater.com">Jason de Plater Photography</a></small><br>';
+            }
+        }
+    });
+}
+
+lightbox();
 
 //-----------------------------------------------------------------
 // SCROLL TO

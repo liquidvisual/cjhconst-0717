@@ -28,11 +28,11 @@ a {
 // PARAGRAPHS
 //-----------------------------------------------------------------
 
-// p, ul, ol, td {
-//     @include media-breakpoint-up(lg) {
-//         font-size: rem-calc(18);
-//     }
-// }
+p, ul, ol, td {
+    @include media-breakpoint-up(lg) {
+        font-size: rem-calc(18);
+    }
+}
 
 //-----------------------------------------------------------------
 // HEADINGS

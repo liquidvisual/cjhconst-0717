@@ -4,7 +4,7 @@ cname: cjhconstructions.com.au
 
 # META
 title: CJH Constructions
-title_homepage: CJH Constructions - Local Construction for Cambelltown, Narellan, Camden and Western Sydney
+title_homepage: Carpentry Services for Cambelltown and Western Sydney | CJH Constructions
 company: CJH Constructions Pty Ltd
 description: CJH Constructions is small team of professionals that work through Cambelltown, Narellan, Camden and Western Sydney. Get a quick quote today.
 
@@ -21,9 +21,47 @@ jekyll_version: 3.5.0
 # OFFICES
 offices:
   - title: Campbelltown
-    address:
-    phone: 04 4966 3606
-    email: kelly@cjhconstructions.com.au
+    address: 7 Davy Place, St Helens Park 2560
+    phone: 0432 127 272
+    email: chris@cjhconstructions.com.au
+
+# CAMPBELLTOWN SUBURBS
+# https://en.wikipedia.org/wiki/City_of_Campbelltown_(New_South_Wales)
+campbelltown_suburbs:
+  - title: Airds
+  - title: Ambarvale
+  - title: Blair Athol
+  - title: Blairmount
+  - title: Bow Bowing
+  - title: Bradbury
+  - title: Campbelltown
+  - title: Claymore
+  - title: Denham Court
+  - title: Eagle Vale
+  - title: Englorie Park
+  - title: Eschol Park
+  - title: Gilead
+  - title: Glen Alpine
+  - title: Glenfield
+  - title: Ingleburn
+  - title: Kearns
+  - title: Kentlyn
+  - title: Leumeah
+  - title: Long Point
+  - title: Macarthur Heights
+  - title: Macquarie Fields
+  - title: Macquarie Links
+  - title: Manangle Park
+  - title: Minto
+  - title: Minto Heights
+  - title: Raby
+  - title: Rosemeadow
+  - title: Ruse
+  - title: St Andrews
+  - title: St Helens Park
+  - title: Varroville
+  - title: Wedderburn
+  - title: Woodbine
 
 # SOCIAL MEDIA
 facebook: https://www.facebook.com/cjhconstructionsptyltd/
