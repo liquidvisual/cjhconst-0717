@@ -6,7 +6,7 @@
 -->
 {% endcomment %}
 
-{% assign address = site.data.settings.offices[0].address %}
+{% assign address = include.address | default: site.data.settings.offices[0].address %}
 
 <!-- GOOGLE MAP -->
 <div class="lv-google-map">
@@ -15,6 +15,6 @@
 	        height="100%"
 	        frameborder="0"
 	        style="pointer-events: none;"
-	        data-src="https://maps.google.com/maps?hl=en&q={{address | strip_html }}&z=21&ie=UTF8&t=roadmap&z=16&iwloc=A&output=embed">
+	        data-src="https://maps.google.com/maps?hl=en&q={{address | strip_html }}&z=21&ie=UTF8&t=roadmap&z=12&iwloc=A&output=embed">
 	</iframe>
 </div>

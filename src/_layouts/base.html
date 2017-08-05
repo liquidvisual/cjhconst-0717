@@ -4,14 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <title>
-        {% if page.url == '/' %}
-            {{ site.data.settings.title_homepage }}
-        {% else %}
-            {{ page.title }} - {{ site.data.settings.title }}
-        {% endif %}
-    </title>
+    <meta name="description" content="
+    {% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.data.settings.description }}{% endif %}">
+    <title>{% if page.url == '/' %}{{ site.data.settings.title_homepage }}{% else %}{{ page.title }} - {{ site.data.settings.title }}{% endif %}</title>
 
     <!-- build:css({src,.tmp}) /assets/css/minified.css -->
     <link rel="stylesheet" href="/css/main.css">
@@ -23,19 +18,12 @@
 
     <div class="lv-page">
 
-        {{ content }}
-
         <!-- HEADER -->
         <header class="global-header fixed-top">
             {% include header.html %}
         </header>
 
-        {% comment %}
-
         {{ content }}
-
-
-        {% endcomment %}
 
         <!-- FOOTER -->
         <footer class="global-footer">
